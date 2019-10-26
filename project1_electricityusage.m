@@ -1,0 +1,12 @@
+price = 4 +(8)*rand(23,3);
+usage = 2+2*rand(23,3);
+res=usage(:,1);
+comm = usage(:,2);
+ind = usage(:,3);
+yrs = (1991:2013)';
+plot(yrs,res,'b--');
+hold on;
+plot(yrs,comm,'k:');
+plot(yrs,ind,'m-.');
+title('July Electricity Usage');
+legend('res','comm','ind');
